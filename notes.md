@@ -81,3 +81,4 @@ on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground p
 - 2026-11-12: Cleaned data in Power Query (172,625 strikes, 2016–2025).
   Added DAMAGE_SEVERITY, AIRPORT_ENVIRONMENT, year/month columns.
   Passed both damage consistency checks.
+- 2026-11-12: Built PivotTables for species, month, flight phase, top-4 species by month, and SDF. Cleaned up formatting (titles, color scales).
