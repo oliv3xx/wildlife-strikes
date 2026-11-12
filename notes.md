@@ -70,6 +70,12 @@ on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground p
 - Approach and climb are the phases an airport can most influence, since they happen low and near the field. En route strikes are mostly out of the airport's control
 - Unknown-phase strikes have the lowest damage rate (1.2%), so excluding them from location comparisons hides very little damage
 
+### Priority species by month
+- Turkey vulture, Canada goose, white-tailed deer, and black vulture cause the most damage August–November (451 damaging strikes, the biggest window)
+- Turkey vulture peaks in November (40); deer peak September–November, matching fall breeding season; black vulture peaks in August
+- Winter hypothesis partly supported: these 4 species are ~19% of damaging strikes in Dec–Feb vs ~12% in May–Jul, but other species also drive the higher winter damage rate
+- Recommendation direction: focus control efforts on these species Aug–Nov
+
 ## Log
 - 2026-11-12: Set up project, downloaded data, profiled columns in Power Query
 - 2026-11-12: Cleaned data in Power Query (172,625 strikes, 2016–2025).
