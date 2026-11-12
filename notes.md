@@ -42,6 +42,12 @@ Data Dictionary
 - HEIGHT is 30% empty. Strikes at or below 500 ft are classified as
 on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground phases (taxi, takeoff run, landing roll, parked) count as on-airport; the rest are Unknown.
 - Data-quality check: no strikes with INDICATED_DAMAGE = 0 had a damage severity of Minor, Substantial, or Destroyed. Columns are consistent.
+- 58% of 2016–2025 strikes (101,022) have no HEIGHT and no ground phase, so their location is Unknown. On/off-airport comparisons use only the 42% with known location (On: 49,546 | Off: 22,057).
+- 57,965 strikes (34%) were not identified to species ("Unknown bird"). Excluded from species rankings since they can't be targeted, but noted as a limitation and a reason to improve species identification.
+- Ranked species two ways: damage rate (danger per strike) and damaging strikes (total impact). Turkey vulture, Canada goose, white-tailed deer, and black vulture rank high on both.
 
 ## Log
 - 2026-11-12: Set up project, downloaded data, profiled columns in Power Query
+- 2026-11-12: Cleaned data in Power Query (172,625 strikes, 2016–2025).
+  Added DAMAGE_SEVERITY, AIRPORT_ENVIRONMENT, year/month columns.
+  Passed both damage consistency checks.
