@@ -1,9 +1,7 @@
 # Wildlife Strikes Analysis
 
 ## Business Question
-Which wildlife species, flight phases, and times of year are most likely to
-cause aircraft damage when struck, and what should an airport like
-Louisville (SDF) prioritize in its wildlife management?
+Which wildlife species, flight phases, and times of year are most likely to cause aircraft damage when struck, and what should an airport like Louisville (SDF) prioritize in its wildlife management?
 
 *Original question focused on damage **cost**, but profiling showed cost fields are 98% empty. Pivoted to damage rate (% of strikes causing damage) as the main measure, with cost as supporting context where reported.
 Added a local airport focus so the findings lead to a specific,
@@ -23,7 +21,7 @@ Data Dictionary
 | STATE | State | 14% | Yes |
 | AIRCRAFT | Aircraft type | 0% | Maybe |
 | PHASE_OF_FLIGHT | Takeoff, approach, etc | 40% | Yes |
-| HEIGHT | Feet above ground at time of strike | ? | Yes (to separate on-airport vs. off-airport strikes) |
+| HEIGHT | Feet above ground at time of strike | 30% | Yes (to separate on-airport vs. off-airport strikes) |
 | COST_REPAIRS_INFL_ADJ | Repair cost, today's $ | 98% | YES |
 | COST_OTHER_INFL_ADJ | Other costs (delays, etc), today's $ | 98% | Yes |
 | COST_REPAIRS / COST_OTHER | Unadjusted costs | 98% | No (adjusted version replace them) |
@@ -41,6 +39,8 @@ Data Dictionary
 - Grouping by AIRPORT_ID and SPECIES_ID instead of names to avoid spelling inconsistencies.
 - Using damage rate (% of strikes causing damage) instead of raw counts, since counts reflect reporting habits and strike frequency, not danger.
 - Following the approach FAA/USDA researchers use to rank species hazard (% damage, % substantial damage).
+- HEIGHT is 30% empty. Strikes at or below 500 ft are classified as
+on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground phases (taxi, takeoff run, landing roll, parked) count as on-airport; the rest are Unknown.
 
 ## Log
 - 2026-11-12: Set up project, downloaded data, profiled columns in Power Query
