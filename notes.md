@@ -46,6 +46,30 @@ on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground p
 - 57,965 strikes (34%) were not identified to species ("Unknown bird"). Excluded from species rankings since they can't be targeted, but noted as a limitation and a reason to improve species identification.
 - Ranked species two ways: damage rate (danger per strike) and damaging strikes (total impact). Turkey vulture, Canada goose, white-tailed deer, and black vulture rank high on both.
 
+## Findings
+
+### Species (2016–2025, species with 50+ strikes, unknowns excluded)
+- Highest damage rate per strike: white-tailed deer (74.5%), black vulture (65.0%), anhinga (57.1%), greater white-fronted goose (53.0%)
+- Most damaging strikes overall: turkey vulture (302), Canada goose (271), red-tailed hawk (251), white-tailed deer (245), black vulture (182)
+- Top priority species (high on both lists): turkey vulture, Canada goose, white-tailed deer, black vulture
+- Pattern: large, heavy animals (vultures, geese, deer) cause the most damage
+- Red-tailed hawk and mourning dove have low damage rates but cause a lot of damage through sheer volume
+- 34% of strikes (57,965) were never identified to species
+
+### Timing
+- Most strikes happen July–October (22K–24K/month)
+- Damage rate is highest November–March (~7%) and lowest in summer (~2–3%)
+- Most damaging strikes happen September–November, peaking in October (947)
+- Summer = many strikes, mostly harmless. Winter = fewer strikes, more dangerous. Fall = both, making October the highest-risk month
+- Hypothesis to test: large species make up a bigger share of winter strikes
+
+### Flight Phase
+- Airborne phases have the highest damage rates: en route (20.2%), climb (11.1%), descent (10.6%). Higher speed likely means more damage
+- Ground phases have the lowest: taxi (1.5%), landing roll (3.3%), take-off run (4.5%)
+- Approach causes the most damaging strikes overall (2,649) due to volume
+- Approach and climb are the phases an airport can most influence, since they happen low and near the field. En route strikes are mostly out of the airport's control
+- Unknown-phase strikes have the lowest damage rate (1.2%), so excluding them from location comparisons hides very little damage
+
 ## Log
 - 2026-11-12: Set up project, downloaded data, profiled columns in Power Query
 - 2026-11-12: Cleaned data in Power Query (172,625 strikes, 2016–2025).
