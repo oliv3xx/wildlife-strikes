@@ -41,6 +41,7 @@ Data Dictionary
 - Following the approach FAA/USDA researchers use to rank species hazard (% damage, % substantial damage).
 - HEIGHT is 30% empty. Strikes at or below 500 ft are classified as
 on-airport (threshold used in FAA/USDA research). When HEIGHT is blank, ground phases (taxi, takeoff run, landing roll, parked) count as on-airport; the rest are Unknown.
+- Data-quality check: no strikes with INDICATED_DAMAGE = 0 had a damage severity of Minor, Substantial, or Destroyed. Columns are consistent.
 
 ## Log
 - 2026-11-12: Set up project, downloaded data, profiled columns in Power Query
