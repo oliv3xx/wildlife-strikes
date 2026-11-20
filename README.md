@@ -97,7 +97,7 @@ Rebuilt the dashboard in Power BI to add filtering by state, airport, and year.
 ## Files
 - `excel/wildlife_strikes.xlsx`: Power Query cleaning steps, PivotTables,
   and dashboard
-- `powerbi/wildlife_strikes.pbix`: Power BI report
+- `powerbi/wildlife-strikes.pbix`: Power BI report
 - `notes.md`: working notes, data dictionary, and decision log
 - `images/dashboard.png`: dashboard screenshot
 
