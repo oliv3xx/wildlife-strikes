@@ -39,6 +39,18 @@ Louisville (SDF) prioritize to reduce it?
 ## Tools
 Excel: Power Query, PivotTables, PivotCharts, XLOOKUP, COUNTIFS, and
 conditional formatting
+Power BI (DAX, Power Query)
+
+## Power BI Version
+![Power BI Dashboard](images/ws_powerbi_dashboard.png)
+
+Rebuilt the dashboard in Power BI to add filtering by state, airport, and year.
+
+- DAX measures for total strikes, damaging strikes, damage rate, and % unidentified species
+- A minimum-volume damage rate measure (50 strikes nationally, 10 per airport), built into
+  the measure because Power BI's Top N filter runs before visual-level filters
+- A combo chart comparing damaging strike counts with damage rate by month
+- Totals reconciled with the Excel version (172,625 strikes, 33.78% unidentified)
 
 ## Approach
 1. Reviewed every column for missing values before cleaning
@@ -85,6 +97,7 @@ conditional formatting
 ## Files
 - `excel/wildlife_strikes.xlsx`: Power Query cleaning steps, PivotTables,
   and dashboard
+- `powerbi/wildlife_strikes.pbix`: Power BI report
 - `notes.md`: working notes, data dictionary, and decision log
 - `images/dashboard.png`: dashboard screenshot
 
